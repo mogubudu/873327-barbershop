@@ -3,63 +3,183 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Barbershop catalog</title>
-	<link rel="stylesheet" href="css/css.css">
 </head>
 <body>
-	<header>
-		<div class="logo">Barbershop</div>
-		<nav>
-			<ul>
-				<li><a href="#">Информация</a></li>
-				<li><a href="#">Новости</a></li>
-				<li><a href="#">Прайс-лист</a></li>
-				<li class=link-active><a href="#">Магазин</a></li>
-				<li><a href="#">Контакты</a></li>
+	<header class="main-header">
+		<nav class="main-header-navigation">
+			<a href="index.html"class="main-header-logo">
+				<img src="img/index-logo.svg" width="111" height="24" alt="Логотип барбершопа">
+			</a>
+			<ul class="site-navigation">
+				<li><a href="information.html">Информация</a></li>
+				<li><a href="news.html">Новости</a></li>
+				<li><a href="price.html">Прайс-лист</a></li>
+				<li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
+			</ul>
+			<ul class="user-navigation">
+				<li><a href="login.html">Вход</a></li>
 			</ul>
 		</nav>
 	</header>
-	<section>
-		<h1>Средства для ухода</h1>
-		<div class="breadcrumbs">
-			<ul>
-				<li><a href="">Главная</a></li>
-				<li><a href="">Магазин</a></li>
-				<li>Средства для ухода</li>
+	<main class="container">
+		<h1 class="page-title">Средства для ухода</h1>
+		<ul class="breadcrumbs">
+			<li><a href="index.html">Главная</a></li>
+			<li><a href="catalog.html">Магазин</a></li>
+			<li class="breadcrumbs-current">Средства для ухода</li>
+		</ul>
+		<section class="product-filter">
+			<h2 class="visually-hidden">Фильр товаров</h2>
+			<section class="manufacturers-filter">
+				<span>Производители</span>
+				<!-- здесь будет фильр по производителям -->
+			</section>
+			<section class="category-product-filter">
+				<span>Группы товаров</span>
+				<!-- здесь будет фильтр по группам товаров -->
+			</section>
+			<button class="button">Показать</button>
+		</section>
+		<section class="products">
+			<h2 class="visually-hidden">Список средств для ухода</h2>
+			<ul class="product-list">
+				<li class="product-item">
+					<h3>
+						<a href="catalog-item.html">
+						<span class="product-category">Набор для путешествий</span>
+						<span class="product-item-title">"Baxter of California"</span>
+					</a>
+					</h3>
+					<p class="product-item-image">
+						<a href="catalog-item.html">
+							<img src="img/product-1.jpg" width="220" height="165" alt="Набор для путешествий "Baxter of California"">
+						</a>
+					</p>
+					<p class="product-item-price">
+						<b>2 900 ₽</b>
+						<a href="#" class="button">Купить</a>
+					</p>
+				</li>
+				<li class="product-item">
+					<h3>
+						<a href="catalog-item.html">
+						<span class="product-category">Набор для путешествий</span>
+						<span class="product-item-title">"Baxter of California"</span>
+					</a>
+					</h3>
+					<p class="product-item-image">
+						<a href="catalog-item.html">
+							<img src="img/product-1.jpg" width="220" height="165" alt="Набор для путешествий "Baxter of California"">
+						</a>
+					</p>
+					<p class="product-item-price">
+						<b>2 900 ₽</b>
+						<a href="#" class="button">Купить</a>
+					</p>
+				</li>
+				<li class="product-item">
+					<h3>
+						<a href="catalog-item.html">
+						<span class="product-category">Набор для путешествий</span>
+						<span class="product-item-title">"Baxter of California"</span>
+					</a>
+					</h3>
+					<p class="product-item-image">
+						<a href="catalog-item.html">
+							<img src="img/product-1.jpg" width="220" height="165" alt="Набор для путешествий "Baxter of California"">
+						</a>
+					</p>
+					<p class="product-item-price">
+						<b>2 900 ₽</b>
+						<a href="#" class="button">Купить</a>
+					</p>
+				</li>
+				<li class="product-item">
+					<h3>
+						<a href="catalog-item.html">
+						<span class="product-category">Набор для путешествий</span>
+						<span class="product-item-title">"Baxter of California"</span>
+					</a>
+					</h3>
+					<p class="product-item-image">
+						<a href="catalog-item.html">
+							<img src="img/product-1.jpg" width="220" height="165" alt="Набор для путешествий "Baxter of California"">
+						</a>
+					</p>
+					<p class="product-item-price">
+						<b>2 900 ₽</b>
+						<a href="#" class="button">Купить</a>
+					</p>
+				</li>
+				<li class="product-item">
+					<h3>
+						<a href="catalog-item.html">
+						<span class="product-category">Набор для путешествий</span>
+						<span class="product-item-title">"Baxter of California"</span>
+					</a>
+					</h3>
+					<p class="product-item-image">
+						<a href="catalog-item.html">
+							<img src="img/product-1.jpg" width="220" height="165" alt="Набор для путешествий "Baxter of California"">
+						</a>
+					</p>
+					<p class="product-item-price">
+						<b>2 900 ₽</b>
+						<a href="#" class="button">Купить</a>
+					</p>
+				</li>
+				<li class="product-item">
+					<h3>
+						<a href="catalog-item.html">
+						<span class="product-category">Набор для путешествий</span>
+						<span class="product-item-title">"Baxter of California"</span>
+					</a>
+					</h3>
+					<p class="product-item-image">
+						<a href="catalog-item.html">
+							<img src="img/product-1.jpg" width="220" height="165" alt="Набор для путешествий "Baxter of California"">
+						</a>
+					</p>
+					<p class="product-item-price">
+						<b>2 900 ₽</b>
+						<a href="#" class="button">Купить</a>
+					</p>
+				</li>
 			</ul>
-		</div>
-	</section>
-	<main>
-		<seaction class="form-filter"></seaction>
-		<section class="catalog-product">
-			<div class="product">
-				<div class="product-image">
-					<img src="#" alt="">
-				</div>
-				<a href="#">
-					<h2 class="product-heading">
-						Набор для путешествий "Baxter: of california"
-					</h2>
-				</a>
-				<div class="product-price"></div>
-			</div>
+			<ul class="pagination-list">
+				<li class="pagination-item"><a href="#">1</a></li>
+				<li class="pagination-item pagination-item-current"><a>2</a></li>
+				<li class="pagination-item"><a href="#">3</a></li>
+				<li class="pagination-item"><a href="#">4</a></li>
+			</ul>
 		</section>
 	</main>
-	<footer>
-		<section class="adress">
+	<footer class="main-footer">
+		<p class="footer-contacts">
 			Барбершоп "Бородинский"<br>
-			Адрес: г.Санкт-Петербург, ул.Б.Конюшенная, д.19<br>
-			<a href="#">Как нас найти</a><br>
-			Телефон: +7(495) 666-02-66
-		</section>
-		<section class="social-link">
-			<a href="#">Мы Вконтакте</a>
-			<a href="#">Мы в Facebook</a>
-			<a href="#">Мы в Instagram</a>
-		</section>
+			Адрес: г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8<br>
+			<a href="map.html">Как нас найти?</a><br>
+			Телефон: +7 (495) 666-02-66
+		</p>
+		<div class="footer-social">
+			<ul>
+				<li><a class="footer-social-link vk-link" href="#">Вконтакте</a></li>
+				<li><a class="footer-social-link facebook-link" href="#">Facebook</a></li>
+				<li><a class="footer-social-link instagram-link" href="#">Instagram</a></li>
+			</ul>
+		</div>
+		<p class="footer-copyright">
+			<span>Разработано</span>
+			<a href="https://htmlacademy.ru" class="button">HTML Academy</a>
+		</p>
 	</footer>
-	<section class="htmlacademy">
-		<p>Разработано</p>
-		<a href="">HTMLAcademy</a>
-	</section>
+
+	  <section class="modal modal-login">
+      <h2>Личный кабинет</h2>
+      <p>Введите свой логин и пароль.</p>
+      <!-- Здесь будет форма -->
+      <span class="modal-close">x</span>
+    </section>
 </body>
 </html>
