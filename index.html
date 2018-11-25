@@ -61,11 +61,11 @@
 		</section>
 		<section class="gallery">
 			<h2>Фотогалерея</h2>
-			<div class="gallery-item">
-				<a href="#"><img src="img/gallery-main.jpg" width="286" height="164" alt="интерьер барбершопа"></a>
-			</div>
-			<button class="button button-back">Назад</button>
-			<button class="button button-next">Вперед</button>
+			<figure class="gallery-item">
+				<a href="#"><img src="img/gallery-main.jpg" width="286" height="164" alt="Интерьер барбершопа"></a>
+			</figure>
+			<button type="button" class="button button-back">Назад</button>
+			<button type="button" class="button button-next">Вперед</button>
 		</section>
 		<section class="contacts">
 			<h2>Контактная информация</h2>
@@ -85,8 +85,28 @@
 		<section class="appointment">
 			<h2>Записаться</h2>
 			<p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-			<form action="#">
-				<!-- здесь будет форма -->
+			<form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+				<p class="appointment-item">
+					<label for="appointment-date">
+						<input type="text" id="appointment-date"name="date" value="" placeholder="08.10.2017">
+					</label>
+				</p>
+				<p class="appointment-item">
+					<label for="appointment-time">
+						<input type="text" id="appointment-time" name="time" value="" placeholder="10:00">
+					</label>
+				</p>
+				<p class="appointment-item">
+					<label for="appointment-name">
+						<input type="text" id="appointment-name" name="name" value="" placeholder="Борода">
+					</label>
+				</p>
+				<p class="appointment-item">
+					<label for="appointment-phone">
+						<input type="tel" name="phone" value="" placeholder="+7 903 123-12-12">
+					</label>
+				</p>
+				<button class="button" type="submit">Отправить</button>
 			</form>
 		</section>
 	</main>
@@ -112,8 +132,37 @@
 	<section class="modal modal-login">
       <h2>Личный кабинет</h2>
       <p>Введите свой логин и пароль.</p>
-      <!-- Здесь будет форма -->
-      <span class="modal-close">x</span>
+	      <form action="https://echo.htmlacademy.ru" class="login-form">
+	      	<p>
+	      		<label for="user-login" class="visually-hidden">Логин</label>
+	      		<input type="text" class="login-icon-user" id="user-login" name="login" placeholder="Логин">
+	      	</p>
+	      	<p>
+	      		<label for="user-password" class="visually-hidden">Пароль</label>
+	      		<input type="password" class="password-icon-user" id="user-password" name="password" placeholder="Пароль">
+	      	</p>
+	      	<p class="login-password-info">
+		      	<label>	
+		      		<input type="checkbox" name="remember" id="login-password-info">
+		      		Запомните меня
+		      	</label>
+	      		<a href="#" class="restore">Я забыл пароль!</a>
+	      	</p>
+	      	<button class="button" type="submit">Войти</button>
+	      </form>
+      <button class="modal-close">Закрыть</button>
+    </section>
+
+    <section class="modal modal-map">
+    	<h2 class="visually-hidden">
+    		Как до нас добраться
+    	</h2>
+    	<p>
+    		<img src="img/map.jpg" width="766" height="560" alt="Офис по адресу: г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8">
+    	</p>
+    	<button class="modal-close" type="button">
+    		Закрыть
+    	</button>
     </section>
   </body>
 </html>
